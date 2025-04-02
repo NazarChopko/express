@@ -21,4 +21,4 @@ RUN   npx prisma generate
 EXPOSE 8000
 
 # Запускаємо додаток
-CMD ["npm", "run", "start:dev"]
+CMD ["npm", "run", "start:prod"]
