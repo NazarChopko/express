@@ -1,0 +1,37 @@
+services:
+  server:
+    container_name: fullstack
+    build:
+      context: .
+    environment:
+      DATABASE_URL: "${DATABASE_URL}"
+    ports:
+      - 8000:8000
+    volumes:
+      - ./prisma:/app/prisma:rw
+    depends_on:
+      - db
+  db:
+    image: mysql:8.0
+    restart: unless-stopped
+    ports:
+      - 9003:3306
+    environment:
+      MYSQL_DATABASE: "${DB_DATABASE}"
+      MYSQL_ROOT_PASSWORD: "${DB_PASSWORD}"
+    volumes:
+      - db-data:/var/lib/mysql/
+  phpmyadmin:
+    container_name: "phpmyadmin"
+    image: "phpmyadmin:latest"
+    ports:
+      - "8081:80"
+    environment:
+      PMA_HOST: "${DB_HOST}"
+      PMA_PORT: "${DB_PORT}"
+      MYSQL_ROOT_PASSWORD: "${DB_PASSWORD}"
+    depends_on:
+      - db
+
+volumes:
+  db-data:

@@ -1,0 +1,9 @@
+model UserInfo {
+  id        Int      @id @default(autoincrement())  
+  userName  String?  
+  userImage String? 
+  address   String?  
+
+  user      User    @relation(fields: [userId], references: [id])
+  userId    Int     @unique
+}

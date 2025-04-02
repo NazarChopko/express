@@ -1,0 +1,6 @@
+Mon, 17 Mar 2025 15:17:38 GMT GET /api/signup 200
+Mon, 17 Mar 2025 15:17:44 GMT PUT /api/signup 200
+Mon, 17 Mar 2025 15:20:34 GMT PUT /api/signup 200 17
+::ffff:127.0.0.1 - - [17/Mar/2025:15:25:19 +0000] "PUT /api/signup HTTP/1.1" 200 17 "-" "PostmanRuntime/7.43.0"
+::ffff:127.0.0.1 - - [17/Mar/2025:15:26:39 +0000] "PUT /api/signup HTTP/1.1" 500 21 "-" "PostmanRuntime/7.43.0"
+Mon, 17 Mar 2025 15:27:24 GMT PUT /api/signup 500 21

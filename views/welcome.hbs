@@ -1,0 +1,316 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
+    <style>
+      @import url(https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;600;700;800;900&family=Lato:wght@400;700;900&family=Montserrat:wght@300;400;500;600;700;900&family=Nunito:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap);
+
+      .social,
+      .social-box {
+        display: inline-block;
+      }
+      .footer,
+      .title-main {
+        font-family: Montserrat, sans-serif;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background: #fff;
+        font-family: "DM Sans", sans-serif;
+        color: #000;
+        margin: 0;
+      }
+      .orange {
+        color: #ffa62b;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+      .mb-3 {
+        margin-bottom: 16px;
+      }
+      .fz-20 {
+        font-size: 14px;
+      }
+      .fz-24 {
+        font-size: 24px;
+      }
+      .font-weight-normal {
+        font-weight: 400;
+      }
+      .wrapper {
+        background-color: #e5e5e5;
+        padding: 30px 0px;
+        height: 100%;
+        min-height: 100vh;
+      }
+      .email-container {
+        max-width: 480px;
+        margin: 0 auto;
+        background-color: white;
+        overflow: hidden;
+      }
+
+      .logo {
+        width: 27px;
+        height: 42px;
+        vertical-align: text-bottom;
+      }
+
+      .title-main {
+        font-weight: 700;
+        font-size: 26px;
+        padding: 16px 0px;
+        text-align: center;
+        color: white;
+        background-color: #001f33;
+      }
+
+      .section-black {
+        padding: 32px 80px;
+      }
+
+      .section-black .title {
+        text-align: center;
+      }
+
+      .section-black .title .org_logo {
+        width: 20px;
+        height: 20px;
+        vertical-align: baseline;
+      }
+
+      .section-black .title .org_name {
+        font-size: 26px;
+        font-weight: 700;
+        font-family: Montserrat, sans-serif;
+        color: #042d49;
+      }
+
+      .section-black .message_from {
+        text-align: center;
+        font-size: 15px;
+        font-weight: 500;
+        color: #000;
+      }
+
+      .section-black .congratulation {
+        text-align: center;
+        font-size: 17px;
+        font-family: Montserrat, sans-serif;
+        font-weight: 700;
+        color: #001f33;
+        margin-top: 15px;
+      }
+
+      .cart-donation,
+      .gaz-card {
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: 98% 98%;
+        overflow: hidden;
+        border-radius: 30px;
+        padding: 50px 22px 60px;
+        text-align: center;
+      }
+      .gaz-card {
+        background-image: url(https://patronbadge.com/img/bg-email.png);
+        margin-top: 13px;
+      }
+      .gaz-card .title-gaz {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      .cart-donation {
+        background-image: url(https://patronbadge.com/img/bg-email-badge.png);
+        color: #003f66;
+        max-width: 360px;
+        margin: 0 auto;
+      }
+      .cart-donation .title {
+        font-size: 18px;
+        line-height: 1;
+        margin-bottom: 4px;
+      }
+
+      .cart-donation .date,
+      .name {
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 8px;
+      }
+
+      .cart-donation .index {
+        font-size: 10px;
+        margin-top: 8px;
+      }
+      .section-black .download {
+        font-weight: 700;
+        font-family: Montserrat, sans-serif;
+        text-align: center;
+        font-size: 16px;
+        color: #4b5563;
+      }
+      .footer .title {
+        font-weight: 700;
+        margin-bottom: 12px;
+      }
+
+      .share-section {
+        margin-top: 32px;
+        padding: 0px 70px;
+      }
+      .share-section .title {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        color: #000;
+      }
+      .share-section p {
+        color: #000;
+        font-family: "DM Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      .social {
+        margin: 0 9px;
+        vertical-align: middle;
+        transition: 0.3s;
+        font-size: 0;
+      }
+      .social:hover {
+        opacity: 0.7;
+      }
+      .social-box {
+        background: #ffa62b;
+        border-radius: 100px;
+        padding: 16px 44px;
+      }
+
+      .footer {
+        margin-top: 24px;
+        background: #001f33;
+        text-align: center;
+        padding: 24px;
+        color: #fff;
+      }
+      .footer .title {
+        font-size: 16px;
+      }
+      .footer .rights {
+        font-weight: 300;
+        font-size: 12px;
+      }
+
+      @media screen and (max-width: 500px) {
+        .section-black {
+          padding: 32px 20px !important;
+        }
+        .share-section {
+          padding: 0px 20px !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="email-container">
+        <div class="title-main">
+          <img
+            src="https://nazar-todo-app.s3.eu-north-1.amazonaws.com/dev/uploads/files/motherland.png"
+            class="logo"
+            alt=""
+          />
+          <span>PatronBadge<span class="orange">.</span></span>
+        </div>
+
+        <div class="section-black">
+          <div class="message_from">Message from</div>
+          <div class="title">
+            <img
+              src="https://nazar-todo-app.s3.eu-north-1.amazonaws.com/dev/uploads/files/motherland.png"
+              class="org_logo"
+              alt=""
+            />
+            <span class="org_name">{{company_name}}</span>
+          </div>
+          <div class="congratulation">
+            Congratulations!
+            <br />
+            You have received a new Badge 🎉
+          </div>
+          <div class="gaz-card">
+            <div class="title-gaz">Thank you for your donation!</div>
+            <div class="cart-donation">
+              <a href="{{badge_url}}" target="_blank" style="text-decoration: none; color: inherit">
+                <div class="mb-3">
+                  <img width="150" src="./images/badge.png" alt="Donor Badge" />
+                </div>
+                <div class="title">{{project_name}}</div>
+                <div class="fz-20">Donation</div>
+                <div class="name">{{name.firstName}}</div>
+                <div class="date">{{date}}</div>
+                <div class="index" style="letter-spacing: 3px">{{ID}}</div>
+              </a>
+            </div>
+          </div>
+          <div class="text-center">
+            <a href="/" target="_blank" class="download">Download badge</a>
+          </div>
+        </div>
+        <div class="share-section">
+          <div class="title">Share with my followers</div>
+          <p>
+            Show the world that you're committed to making a positive impact and inspire others to do the same.
+          </p>
+        </div>
+        {{!-- <div class="text-center">
+          <div class="social-box">
+            <a
+              href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode(url($donor_badge->project->company->slug . '/' . $donor_badge->project->project_id . '?referral=' . $donor_badge->donor_badge_id)) }}"
+              class="social"
+              target="_blank"
+            >
+              <img src="{{ url('img/facebook.png') }}" alt="Facebook Share" />
+            </a>
+            <a
+              href="https://www.linkedin.com/sharing/share-offsite?url={{ urlencode(url($donor_badge->project->company->slug . '/' . $donor_badge->project->project_id . '?referral=' . $donor_badge->donor_badge_id)) }}&mini=true"
+              class="social"
+              target="_blank"
+            >
+              <img src="{{ url('img/in.png') }}" alt="LinkedIn Share" />
+            </a>
+            <a
+              href="https://twitter.com/share?url={{ urlencode(url($donor_badge->project->company->slug . '/' . $donor_badge->project->project_id . '?referral=' . $donor_badge->donor_badge_id)) }}"
+              class="social"
+              target="_blank"
+            >
+              <img src="{{ url('img/twitter.png') }}" alt="Twitter Share" />
+            </a>
+          </div>
+        </div> --}}
+        <div class="footer">
+          <div class="title">
+            PatronBadge<span class="orange fz-24">.</span>
+            <span class="font-weight-normal">2023</span>
+          </div>
+          <div class="rights">
+            &copy; 2023 PatronBadge. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
